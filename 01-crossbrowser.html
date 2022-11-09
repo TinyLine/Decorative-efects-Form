@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Кроссбраузерне офорлення мітки і іконки</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/01-crossbrowser.css" />
+</head>
+
+<body>
+  <a href="./index.html">Назад на головну</a>
+
+  <form class="form">
+    <div class="form-field">
+      <input type="text" class="form-input" name="name" id="name" placeholder=" " data-placeholder="Іван" />
+      <label for="name" class="form-label">І'мя</label>
+      <span class="icon"></span>
+
+    </div>
+
+    <div class="form-field">
+      <input type="email" class="form-input" name="mail" id="mail" placeholder=" " data-placeholder="fjdlg@kfkgk" />
+      <label for="mail" class="form-label">Пошта</label>
+      <span class="icon"></span>
+
+    </div>
+
+    <button type="submit">Залишити заявку</button>
+  </form>
+
+
+  <!-- <script>
+    document.querySelector('.form-input').addEventListener('focusin', e => {
+      e.currentTarget.placeholder = e.currentTarget.dataset.placeholder;
+    });
+    document.querySelector('.form-input').addEventListener('focusout', e => {
+      e.currentTarget.placeholder = ' ';
+    });
+  </script> -->
+
+</body>
+
+</html>
